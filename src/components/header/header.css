@@ -1,0 +1,207 @@
+header{
+ height: 250px;
+ width: 100%;
+ background-color: var(--primary-color);
+ position: relative;
+}
+/* Header top  */
+.header-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--white-color);
+
+
+}
+.header-top-menu{
+  display: none;
+  font-size: 29px;
+  color: var(--white-color);
+  cursor: pointer;
+
+}
+.header-top-phone,
+  .header-top-text,
+    .header-top-link{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+  text-align: center;
+}
+.header-top-phone i,
+.header-top-link i{
+      margin-right: 4px;
+}
+/* Header Middle */
+.header-middle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 50%;
+}
+.header-middle-logo{
+  color: var(--white-color);
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-middle-logo i{
+  margin: 0 6px;
+  font-size: 33px; 
+  font-weight: bold;
+ }
+ .header-middle-search-box{
+  width: 600px;
+  background-color: var(--white-color);
+  height: 30%;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+
+ }
+ .header-middle-search-input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: 22px;
+  border: 1px solid transparent;
+ }
+ 
+ .header-middle-search-input:focus{
+  background-color: #7cf98f9a;
+ }
+
+ .header-middle-search-box i{
+  position: absolute;
+  top: 0px;
+  bottom: 3px;
+ 
+  right: 10px;
+  font-size: 30px;
+  color: var(  --gray-color);
+}
+.header-middle-cart-wrapper i{
+  color: var(--white-color);
+  font-size: 44px;
+
+}
+/* NavBar */
+.navbar{
+  background-color: var(  --white-color);
+  box-shadow: 0 0 1px 1px var(--gray-color);
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nav-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.navbar .nav-link{
+  padding: 0 20px;
+  font-size: 19px;
+  color: var(--text-color);
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+ 
+
+
+}
+.navbar .nav-link::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: all 0.3s ease-in-out;
+ 
+
+}
+.navbar .nav-link:hover::after{
+  width: 100%;
+  background-color: var(--main-color);
+}
+ 
+/* Miday Qeuris */
+@media (max-width:888px) {
+ 
+.header-middle-search-box{
+  width: 450px;
+}
+  
+}
+@media (max-width:720px) {
+ 
+  .header-middle-search-box{
+    width: 100%;
+    height: 10px 0;
+  }
+  .header-top-menu{
+    display: block;
+  }
+  .header-top-text{
+    display: none;
+
+  }
+  .header-middle{
+ flex-wrap: wrap;
+  }
+  .header-middle-logo,
+  .header-middle-cart-wrapper
+  {
+ margin: 10px auto;
+  }
+  .navbar{
+    position: fixed;
+    top: 50px;
+    left: -500px;
+    width: 300px;
+    height: 100vh;
+    align-items: flex-start;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-links{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+    width: 100%;
+  }
+  .nav-link{
+    width: 100%;
+    height: 51px;
+
+ 
+    margin: 10px 0;
+  }
+  .nav-link:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+    
+  }
+  /* @media (max-width:620px) {
+ 
+    .header-middle-search-box{
+      width: 100%;
+    }
+  } */
