@@ -1,0 +1,37 @@
+ .services{
+  padding:30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+ }
+ .services-item{
+  padding: 8px;
+  font-size: 21px;
+  font-weight:400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  transition: all .3s ease;
+  width: 11rem;
+ }
+ .services-item i{
+  margin-right: 6px;
+  font-size: 22px; 
+ }
+ @media (max-width:780px) {
+  .services{
+    flex-direction: column;
+
+  }
+  .services-item{
+    margin: 10px 0 ;
+    width: 80%;
+  }
+  
+ }
+
+ 

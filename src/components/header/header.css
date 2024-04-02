@@ -198,6 +198,12 @@ header{
     background-color: var(--primary-color);
     color: var(--white-color);
   }
+  .navbar .nav-links{
+   
+    margin-left: 0px;
+  
+  
+  }
     
   }
  
