@@ -103,4 +103,22 @@ border-color: var(--main-color);
   cursor: pointer;
   margin: 5px 10px;
  color: #777;
+ transition: all 0.3s ease;
+}
+.book-slide-icon-wrapper i:hover{
+  color: #ac00fc;
+  font-size: 33px;
+ 
+}
+/* Rating */
+.rating{
+  color: #fcb900;
+}
+.rating i{
+  font-size: 18px;
+  margin: 0 2px;
+}
+.rating span{
+ margin-left: 5px;
+
 }
