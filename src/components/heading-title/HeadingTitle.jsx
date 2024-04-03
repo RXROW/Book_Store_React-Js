@@ -19,7 +19,6 @@ const h2Style = {
   color:"#9900ff",
   fontSize:"30px",
   fontWeight:"500",
-  borderBottom:"2px",
   paddingBottom:"5px",
   borderBottom:"2px solid #9900ff",
   width:"max-content"
