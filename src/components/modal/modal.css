@@ -124,6 +124,9 @@ font-size: 21px;
     width: 100%;
     text-align: center;
   }
+  .modal-content {
+    width: 90%;
+  }
   .modal-content-title{
     font-size: 28px;
   }
