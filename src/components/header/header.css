@@ -111,7 +111,7 @@ header{
 
 .navbar .nav-link{
   padding: 0 20px;
-  font-size: 19px;
+  font-size: 20px;
   color: var(--text-color);
  
   display: flex;
@@ -135,6 +135,14 @@ header{
   transition: all 0.3s ease-in-out;
  
 
+}
+a{
+  text-decoration: none;
+ 
+}
+.navbar .nav-link:hover{
+  transform: scale(1.1);
+ color: var(--main-color);
 }
 .navbar .nav-link:hover::after{
   width: 100%;
@@ -190,7 +198,7 @@ header{
   .nav-link{
     width: 100%;
     height: 51px;
-
+   
  
     margin: 10px 0;
   }

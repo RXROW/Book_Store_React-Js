@@ -1,8 +1,10 @@
 import React from 'react';
 import './modal.css'
 import Rating from '../book-slider/Rating';
+import { Link } from 'react-router-dom';
+
 const Modal = ({bookData ,setOpenMoadal}) => {
-  const {image ,title ,inStock ,rating,reviews ,author,price} = bookData;
+  const {image ,title ,inStock ,rating,reviews ,author,price ,id} = bookData;
   return (
     <div onClick={()=>setOpenMoadal(false)} className='modal-container'>
       <div onClick={(ev)=>ev.stopPropagation()} className="modal-content">
@@ -28,9 +30,9 @@ const Modal = ({bookData ,setOpenMoadal}) => {
             <i className="bi bi-cart-plus"></i>
               Add To Cart</button>
           </div>
-          <div className="modal-link">
+          <Link to={`/book/${id}`} className="modal-link">
           See More Details
-          </div>
+          </Link>
         </div>
 
         
