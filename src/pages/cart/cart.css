@@ -1,0 +1,146 @@
+.cart{
+padding: 30px;
+}
+.cart-title{
+font-weight: 500;
+font-size: 31px;
+padding-bottom:5px;
+border-bottom: 2px solid #7f00d4;
+width: max-content;
+margin: 10px 0;
+
+}
+ .cart-wrapper {
+  
+  display: flex;
+  align-items: center;
+
+
+}
+.cart-items{
+   width: 70%;
+
+}
+.cart-item{
+display: flex;
+align-items: center;
+padding: 5px;
+position: relative;
+margin-bottom: 21px;
+border-bottom: 1px solid #7f00d4;
+}
+.cart-item-img{
+width: 140px;
+height: 180px;
+object-fit: contain;
+
+}
+.cat-item-info{
+padding: 10px;
+width: calc(100% - 140px);
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-left: 10px;
+}
+.cart-item-book-title{
+font-size: 21px;
+
+}
+.cart-item-author{
+font-size: 20px;
+}
+.cart-item-quantity{
+  font-size: 20px;
+  display: flex;
+
+
+}
+.cart-item-quantity button{
+cursor: pointer;
+padding: 5px;
+font-size: 18px;
+background-color: #7f00d4;
+border: none;
+color: aliceblue;
+border-radius: 2px;
+transition: all .3s ease-in-out;
+
+}
+.cart-item-quantity button:hover{
+  transform: scale(1.1);
+}
+.cart-item-quantity b{
+  font-size: 21px;
+  margin: 0 5px;
+  
+  }
+  .cart-qun-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+.cart-item-price{
+  font-size: 21px;
+
+} 
+.bi-trash-fill{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 25px;
+  color: crimson;
+  cursor: pointer;
+} 
+.cart-order-summary{
+  width: 30%;
+  border: 1px solid #7f00d4;
+  margin: 0 10px;
+}
+.cart-order-summary-title{
+  font-size: 25px;
+  padding: 15px;
+
+}
+.cart-order-summary-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #7f00d4;
+  padding: 10px;
+  font-size: 19px;
+
+}
+@media (max-width:1020px) {
+  .cart-wrapper {
+    flex-direction: column;
+  }
+  .cart-item-book-title{
+    font-size: 18px;
+    
+    }
+    .cart-item-author{
+    font-size: 17px;
+    }
+  .cart-items{
+    width: 100%;
+ 
+  }
+   
+  .cart-order-summary{
+    width: 100%;
+  }
+  .cart-title{
+    margin: 0px auto 20px auto;
+  }
+}
+@media (max-width:570px) {
+  .cart-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .cat-item-info{
+    text-align: center;
+   }
+}
